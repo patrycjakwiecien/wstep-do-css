@@ -1,0 +1,70 @@
+body {
+    background: white;
+}
+
+
+/*selektor znacznika*/
+
+p {
+    color: orange;
+}
+
+
+/*selektor id*/
+
+#paragraf {
+    color: violet;
+}
+
+
+/*selektor klasy*/
+
+.klasa-paragrafu {
+    color: green;
+}
+
+
+/*łaczenie selektorow*/
+
+a,
+span,
+div {
+    color: black;
+}
+
+
+/*selektor bezposredniego elementu potomnego*/
+
+li>a {
+    color: aqua;
+}
+
+
+/*selektor elementu potomnego*/
+
+div a {
+    color: black;
+}
+
+/*seslktor bliskiego rodzenstwa*/
+h2+h3 {
+    color: brown;
+}
+
+/*selektor rodzenstwa*/
+h4~p {
+    color: yellow;
+    background: black;
+}
+
+/*selelektor wykluczajacy*/
+#lista>li:not(.ostatni) {
+    color: pink
+}
+ul#lista-pati > ol {
+    background-color: aquamarine;
+    color: darkblue;
+    border-bottom: 1px solid black;
+}
+
+ul#lista-pati > ol:nth-child(3) {color: red;}
